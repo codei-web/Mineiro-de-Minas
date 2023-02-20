@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Mineiro de Minas</title>
+</head>
+
+<body>
+  <header id="header">
+    <div>
+      <img class="logo" src="assets/pictures/logo-cortada.svg" alt="Logo Mineiro">
+      <div class="text">
+        <h3>FAZEMOS SEU AR</h3>
+        <h1>COMO A BRISA DE UM VENTO</h1>
+        <p>AR CONDICIONADO AUTOMOTIVO LIVRE DO MAU CHEIRO NA POTÊNCIA MÀXIMA</p>
+      </div>
+      <a href="https://api.whatsapp.com/send?phone=5522992571649&text=Ol%C3%A1%2C%20Gostaria%20de%20um%20Or%C3%A7amento.%20%F0%9F%9A%97" target="_blank"><button class="orcamento">Solicite um orçamento</button></a>
+    </div>
+    <a href="#servicos">
+      <img class="vetor" src="assets/pictures/VetorAHEHH.svg" alt="Vetor">
+    </a>
+  </header>
+
+  <main>
+    <section id="servicos">
+      <h2>serviços</h2>
+      <div id="buttons buttonMobile">
+        <button class="buttonAutomotivo" onclick="clickAutomotivoMobile()">Automotivo</button>
+        <button class="buttonEletrico" onclick="clickEletricoMobile()">Elétrico</button>
+      </div>
+
+      <div id="buttons buttonDesktop">
+        <button class="buttonAutomotivo" onclick="clickAutomotivoDesktop()">Automotivo</button>
+        <button class="buttonEletrico" onclick="clickEletricoDesktop()">Elétrico</button>
+      </div>
+
+      <div id="cardAutoMobile">
+        <div class="card cardAutoGas">
+          <h3>Carga de Gás</h3>
+          <p>O gás é a premissa de funcionamento do produto. Tanto para o ar automotivo quanto para o residencial.</p>
+        </div>
+
+        <div class="card cardAutoFiltro">
+          <h3>Limpeza de Filtro</h3>
+          <p> Ao se acumularem no filtro, ácaros, fungos e bactérias criam colônias que liberam um odor desagradável para dentro do veículo.</p>
+        </div>
+
+        <div class="card cardAutoOleo">
+          <h3>Óleo Compressor</h3>
+          <p>Trata-se do item encarregado de proporcionar a circulação do fluido refrigerante para que ele transforme o ar, resultando na refrigeração ou no aquecimento do ambiente</p>
+        </div>
+      </div>
+
+
+
+
+      <div id="cardEletroMobile">
+        <div class="card cardEletroChave">
+          <h3>Chave Codificada</h3>
+          <p>
+            Trata-se de uma chave que funciona como uma impressão digital do seu carro, Fazemos a recuperação da sua chave codificada sem dor de cabeça.</p>
+        </div>
+
+        <div class="card cardEletroInjecao">
+          <h3>Injeção Eletrônica</h3>
+          <p>Fazendo a manutenção você garante a funcionalidade e melhor rendimento do veículo, a injeção é responsável por controlar a pressão do ar, marcha lenta válvulas e tempo de ignição.</p>
+        </div>
+
+        <div class="card cardEletroArranque">
+          <h3>Alternador de Arranque</h3>
+          <p>
+            Trata-se de um transformador de movimento fazendo o veículo ligar e movimentar, transformando energia elétrica que recebe da bateria em energia mecânica.</p>
+        </div>
+
+        <div class="card cardEletroVidro">
+          <h3>Módulo de Vidro Elétrico</h3>
+          <p>
+            O módulo de vidro elétrico é o responsável pela subida e decida dos vidros. Além de controla-los, em alguns casos ele permite o travar/destravar as portas com um simples comando. </p>
+        </div>
+
+        <div class="card cardEletroLampada">
+          <h3>Troca de Lâmpada & Faróis</h3>
+          <p>
+            Fazendo a troca/manutenção das Lâmpadas e Faróis garante um facho de luz melhor e uma iluminação certa e evitando o ofuscamento e garantindo uma melhor visibilidade.</p>
+        </div>
+
+        <div class="card cardEletroChicote">
+          <h3>Chicote Elétrico</h3>
+          <p>Um chicote tem uma grande variedade de cabos e cada um deles e responsável por gerenciar e distribuir uma grande parte da energia do automóvel.</p>
+        </div>
+      </div>
+
+      <!-- cards desktops-->
+      <div id="cardAutoDesktop">
+
+        <div class="card">
+          <img src="/assets/pictures/auto-gas.svg" alt="Carga de gás">
+          <h3>Carga de Gás</h3>
+          <p>O gás é a premissa de funcionamento do produto. Tanto para o ar automotivo quanto para o residencial.</p>
+        </div>
+
+        <div class="card">
+          <img src="/assets/pictures/auto-filtro.svg" alt="Limpeza de filtro">
+          <h3>Limpeza de Filtro</h3>
+          <p>
+            Ao se acumularem no filtro, ácaros, fungos e bactérias criam colônias que liberam um odor desagradável para dentro do veículo.</p>
+        </div>
+
+        <div class="card">
+          <img src="/assets/pictures/auto-oleo.svg" alt="Óleo compressor">
+          <h3>Óleo Compressor</h3>
+          <p>Trata-se do item encarregado de proporcionar a circulação do fluido refrigerante para que ele transforme o ar, resultando na refrigeração ou no aquecimento do ambiente</p>
+        </div>
+
+      </div>
+
+      <div id="cardEletroDesktop">
+        <div class="card">
+          <img src="/assets/pictures/eletro-chave.svg" alt="Chave codificada">
+          <h3>Chave Codificada</h3>
+          <p>
+            Trata-se de uma chave que funciona como uma impressão digital do seu carro, Fazemos a recuperação da sua chave codificada sem dor de cabeça.</p>
+        </div>
+
+        <div class="card">
+          <img src="/assets/pictures/eletro-injecao.svg" alt="Injeção eletrônica">
+          <h3>Injeção Eletrônica</h3>
+          <p>
+            Fazendo a manutenção você garante a funcionalidade e melhor rendimento do veículo, a injeção é responsável por controlar a pressão do ar, marcha lenta válvulas e tempo de ignição.</p>
+        </div>
+
+        <div class="card">
+          <img src="/assets/pictures/eletro-arranque.svg" alt="Alternador de arranque">
+          <h3>Alternador de Arranque</h3>
+          <p>Trata-se de um transformador de movimento fazendo o veículo ligar e movimentar, transformando energia elétrica que recebe da bateria em energia mecânica.</p>
+        </div>
+
+        <div class="card">
+          <img src="/assets/pictures/eletro-modulo.svg" alt="Módulo de vidro elétrico">
+          <h3>Módulo de Vidro Elétrico</h3>
+          <p>
+            O módulo de vidro elétrico é o responsável pela subida e decida dos vidros. Além de controla-los, em alguns casos ele permite o travar/destravar as portas com um simples comando. </p>
+        </div>
+
+        <div class="card">
+          <img src="/assets/pictures/eletro-lanterna.svg" alt="Troca de lâmpada e faróis">
+          <h3>Troca de Lâmpada & Faróis</h3>
+          <p>
+            Fazendo a troca/manutenção das Lâmpadas e Faróis garante um facho de luz melhor e uma iluminação certa e evitando o ofuscamento e garantindo uma melhor visibilidade.</p>
+        </div>
+
+        <div class="card">
+          <img src="/assets/pictures/eletro-chicote.svg" alt="Chicote elétrico">
+          <h3>Chicote Elétrico</h3>
+          <p>Um chicote tem uma grande variedade de cabos e cada um deles e responsável por gerenciar e distribuir uma grande parte da energia do automóvel.</p>
+        </div>
+
+      </div>
+
+
+
+    </section>
+
+    <div id="promocoes">
+      <img src="/assets/pictures/Banner-(Mineiro-de-Minas).jpg" alt="promoções">
+    </div>
+
+    <section id="localizacao">
+      <h2>Localização</h2>
+      <div class="boxMapa">
+
+        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.6709693479474!2d-42.04946994890716!3d-22.888609942904733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x971adb3fd34229%3A0x7f8b07f8621858b6!2sR.%20Estocolmo%2C%203%20A%20-%20Jardim%20Olinda%2C%20Cabo%20Frio%20-%20RJ%2C%2028911-036!5e0!3m2!1spt-BR!2sbr!4v1675448964301!5m2!1spt-BR!2sbr" width="150" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <section class="footer">
+      <a href="#header">
+        <img class="logo" src="assets/pictures/logo-cortada.svg" alt="logotipo">
+      </a>
+      <div class="horarios">
+        <h3>Horários</h3>
+        <ul>
+          <li>Seg a Sext: 09h as 19h</li>
+          <li>Sab e Dom: 09h as 13h</li>
+        </ul>
+      </div>
+      <div class="contatos">
+        <h3>Contatos</h3>
+        <ul>
+          <li>mineirodeminas23@gmail.com</li>
+          <li>(22)99257-1649</li>
+          <li>@Mineirodeminas</li>
+        </ul>
+      </div>
+    </section>
+  </footer>
+  <div class="footerbarra">
+    <h4>Desenvolvido por</h4>
+    <img class="codei" src="assets/pictures/codeipng 1.svg" alt="logocodei" />
+  </div>
+
+  <div class="whatsapp">
+    <a href="https://wa.link/rqiqdc" target="_blank"><img src="/assets/pictures/whatsapp.svg" alt=""></a>
+  </div>
+
+
+  <script src="assets/script.js">
+
+  </script>
+</body>
+
+</html>

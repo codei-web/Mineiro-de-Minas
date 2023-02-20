@@ -1,0 +1,50 @@
+@media (min-width: 320px) and (max-width: 768px) {
+  #promocoes {
+    width: 100%;
+    
+  }
+  #promocoes img {
+    width: 100%;
+  }
+}
+@media (min-width: 769px) {
+  #promocoes {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border: none;
+    box-shadow: inset 0 -150px black;
+  }
+  
+  #promocoes img {
+    border: none;
+    width: 74%;
+    border-radius: 10px;
+  
+  }
+
+}
+@media (min-width: 1024px) {
+
+  #promocoes img {
+    width: 65%;
+  }
+ #promocoes {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border: none;
+  box-shadow: inset 0 -180px black;
+}
+}
+@media (min-width: 1201px) {
+  #promocoes {
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   border: none;
+   box-shadow: inset 0 -200px black;
+ }
+ 
+ }
